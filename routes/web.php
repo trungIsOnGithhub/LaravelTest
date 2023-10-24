@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Cc;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,6 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    $allcc = Cc::all();
+
+    $cc1 = Cc::orderBy('tt', 'desc')->get();
+    $cc2 = Cc::where('id', 2)->get();
+
+    error_log($allcc);
+    error_log($cc1);
+    error_log($cc2);
+
     $param = request('param');
     return view('welcome', [
         'param1' => $param
@@ -25,7 +34,7 @@ Route::get('/json/{Mame}', function ($Mame) {
         'base' => 'standard',
         'toppings' => 'vegetable',
         'add-on' => 'ketchup',
-        'hihi' => $Mame
+        'hihi' => $Mame 
     ];
 });
 
