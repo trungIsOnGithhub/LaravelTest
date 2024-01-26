@@ -9,6 +9,8 @@
 
 ## About Laravel
 
+https://www.youtube.com/playlist?list=PLqDySLfPKRn5d7WbN9R0yJA9IRgx-XBlU
+
 ```install composer and php before, after that, run ```composer update```
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
